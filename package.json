@@ -1,14 +1,24 @@
 {
   "name": "logs-node",
   "version": "1.0.0",
-  "description": "logs",
+  "description": "Modulo Node for create logs",
   "main": "index.js",
   "scripts": {
-    "serve": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "agomez1432",
-  "license": "GNU",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abraham1432/logs.git"
+  },
+  "keywords": [
+    "logs",
+    "nodejs",
+    "node",
+    "js"
+  ],
+  "author": "Abraham Gómez <gomezabraham1432@gmail.com> (https://github.com/Abraham1432)",
+  "license": "MIT",
+  "homepage": "https://github.com/Abraham1432/logs#readme",
   "dependencies": {
     "colors": "^1.4.0"
   }

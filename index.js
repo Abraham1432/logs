@@ -1,33 +1,29 @@
-const { name,version } = require('./package.json');
 const colors = require('colors');
 const time = new Date();
 
+function info(message = 'logs-js',appName = 'logs',version = '1.0.0'){
 
-const warn = (message) =>{
-
-    console.log(colors.underline.yellow.bold('log: warn'))
-    console.log(`msg: ${message},appName: ${name},version: ${version},time: ${time}`.yellow)
-
-}
-
-const info = (message) =>{
 
     console.log(colors.underline.green.bold('log: info'))
-    console.log(`msg: ${message},appName: ${name},version: ${version},time: ${time}`.green)
+    console.log(`msg: ${message}, appName: ${appName},version: ${version},time: ${time}`.green)
 }
 
-const error = (message) =>{
+function warn(message = 'logs-js',appName = 'logs',version = '1.0.0'){
 
-    console.log(colors.underline.red.bold('log: error'))
-    console.log(`msg: ${message},appName: ${name},version: ${version},time: ${time}`.red)
 
+    console.log(colors.underline.yellow.bold('log: info'))
+    console.log(`msg: ${message}, appName: ${appName},version: ${version},time: ${time}`.yellow)
 }
 
+function error(message = 'logs-js',appName = 'logs',version = '1.0.0'){
 
-module.export = {
 
-    warn,
+    console.log(colors.underline.red.bold('log: info'))
+    console.log(`msg: ${message}, appName: ${appName},version: ${version},time: ${time}`.red)
+}
+
+module.exports = {
     info,
+    warn,
     error
-
 }
