@@ -1,0 +1,15 @@
+{
+  "name": "logs-node",
+  "version": "1.0.0",
+  "description": "logs",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "agomez1432",
+  "license": "GNU",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

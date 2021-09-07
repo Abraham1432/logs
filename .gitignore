@@ -1,0 +1,12 @@
+# Dependency directories
+node_modules/
+
+# Node
+*.log
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env.test
+.env.production
